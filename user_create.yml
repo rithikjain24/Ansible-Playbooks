@@ -1,0 +1,9 @@
+---
+- name: All about user creation
+  hosts: all
+  tasks:
+    - name: Creating user dbadmin1
+      user:
+        name: dbadmin1
+        uid: 6002
+        state: present
